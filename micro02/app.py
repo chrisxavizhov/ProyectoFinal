@@ -1,0 +1,10 @@
+from flask import Flask
+app = Flask(__name__)
+
+@app.route("/")
+def hola():
+    return "Microservicio 2 Proyecto Final"
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=8080)
+
